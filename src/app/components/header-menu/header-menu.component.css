@@ -1,0 +1,9 @@
+.container{    
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.container button{
+    margin: 10px 20px;
+}
