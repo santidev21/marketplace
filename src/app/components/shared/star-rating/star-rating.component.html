@@ -1,0 +1,8 @@
+<div class="star-rating">
+    <ng-container *ngFor="let star of getStarsArray()">
+      <img [src]="'/assets/star/' + (star === 1 ? 'full-star' : star === 0.5 ? 'half-star' : 'empty-star') + '.png'" alt="Star">
+    </ng-container>
+    <span class="rating-value">
+        {{ rating % 1 === 0 ? rating + '.0' : rating }}
+    </span>
+</div>

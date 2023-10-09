@@ -1,0 +1,15 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 20px;
+    margin: auto 2px;
+}
+
+.rating-value{
+    margin-left: 4px;
+    font-weight: bolder;
+}

@@ -8,6 +8,7 @@ import { HeaderMenuComponent } from './components/header-menu/header-menu.compon
 import { FooterComponent } from './components/footer/footer.component';
 import { MainPageComponent } from './components/main-page/main-page.component';
 import {MatButtonModule} from '@angular/material/button';
+import { StarRatingComponent } from './components/shared/star-rating/star-rating.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     HeaderMenuComponent,
     FooterComponent,
-    MainPageComponent
+    MainPageComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,
