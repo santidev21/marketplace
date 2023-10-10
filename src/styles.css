@@ -8,4 +8,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --secondary-color: #9674A3;
     --accent-color: #5EBAB0;
     --background-color: #FFE8FF;
+    --white: #FFFFFF;
 }
