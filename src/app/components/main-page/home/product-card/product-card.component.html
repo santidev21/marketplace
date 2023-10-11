@@ -1,0 +1,12 @@
+<mat-card class="product-card">
+    <mat-card-header>
+        <mat-card-title>{{product.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <app-star-rating [rating]="product.rating.rate"></app-star-rating>
+        <img mat-card-image [src]="product.image">
+    </mat-card-content>
+    <mat-card-footer>
+        <span class="product-price">USD ${{product.price}}</span>
+    </mat-card-footer>
+</mat-card>

@@ -1,0 +1,8 @@
+<div class="title">
+    <h1>Marketplace v1.0</h1>
+</div>
+<div class="products-container">
+    <div *ngFor="let product of products" class="card-container">
+        <app-product-card class="product-cards" [product]="product"></app-product-card>
+    </div>
+</div>
