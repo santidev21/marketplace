@@ -20,6 +20,10 @@ mat-card-title{
     text-align: center;
 }
 
+mat-card-title:hover{
+    cursor: pointer;
+}
+
 mat-card-content{
     display: flex;
     flex-direction: column;

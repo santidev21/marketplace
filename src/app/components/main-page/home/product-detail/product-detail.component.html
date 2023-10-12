@@ -1,0 +1,19 @@
+
+<div class="back-button">
+    <button mat-fab color="primary" routerLink="/home">
+        <img src="/assets/back.png" alt="back-arrow"/>
+    </button>
+</div>
+<div class="container">
+    <div class="product-image">
+        <img [src]="productDetail.image">
+    </div>
+    <div class="product-detail">
+        <span>{{productDetail.title}}</span><br>
+        <span>{{productDetail.description}}</span><br>
+        <span>{{productDetail.price}}</span><br>
+        <span>{{productDetail.category}}</span><br>
+        <span>{{productDetail.rating.rate}}</span><br>
+        <span>{{productDetail.rating.count}}</span><br>
+    </div>
+</div>

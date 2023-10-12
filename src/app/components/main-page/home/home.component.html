@@ -2,7 +2,13 @@
     <h1>Marketplace v1.0</h1>
 </div>
 <div class="products-container">
-    <div *ngFor="let product of products" class="card-container">
+    <div *ngFor="let product of currentProducts" class="card-container">
         <app-product-card class="product-cards" [product]="product"></app-product-card>
     </div>
 </div>
+<mat-paginator [length]="products.length"
+              [pageSize]="4"
+              [pageSizeOptions]="[4, 8, 12]"
+              (page)="updateProducts()"
+              aria-label="Select page">
+</mat-paginator>
