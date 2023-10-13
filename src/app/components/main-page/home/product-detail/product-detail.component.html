@@ -9,11 +9,17 @@
         <img [src]="productDetail.image">
     </div>
     <div class="product-detail">
-        <span>{{productDetail.title}}</span><br>
-        <span>{{productDetail.description}}</span><br>
-        <span>{{productDetail.price}}</span><br>
-        <span>{{productDetail.category}}</span><br>
-        <span>{{productDetail.rating.rate}}</span><br>
-        <span>{{productDetail.rating.count}}</span><br>
+        <div class="product-header">
+            <span class="product-title">{{productDetail.title}}</span>
+            <app-star-rating [rating]="productDetail.rating.rate"></app-star-rating>
+        </div>
+        <div class="product-info">            
+            <span>Category: {{productDetail.category}}</span><br>
+            <span>{{productDetail.description}}</span><br>
+        </div>
+        <div class="buy-product">
+            <span>USD ${{productDetail.price}}</span><br>
+            <button mat-raised-button color="primary">Buy</button>
+        </div>
     </div>
 </div>
